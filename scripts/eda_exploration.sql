@@ -6,7 +6,7 @@
 -- =============================================================
 
 ---------------------------------------------------------------
--- 🔍 EXPLORE DATABASE STRUCTURE
+--  EXPLORE DATABASE STRUCTURE
 ---------------------------------------------------------------
 
 -- Explore all objects in the database
@@ -20,7 +20,7 @@ SELECT * FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_NAME = 'dim_customers';
 
 ---------------------------------------------------------------
--- 🌍 EXPLORE DIMENSIONS
+--  EXPLORE DIMENSIONS
 ---------------------------------------------------------------
 
 -- Explore all countries where customers come from
@@ -38,7 +38,7 @@ FROM gold.dim_products
 ORDER BY 1,2,3;
 
 ---------------------------------------------------------------
--- ⏰ EXPLORE DATE RANGE
+--  EXPLORE DATE RANGE
 ---------------------------------------------------------------
 
 -- Find the first and last order date
@@ -51,7 +51,7 @@ SELECT
 FROM gold.fact_sales;
 
 ---------------------------------------------------------------
--- 👤 CUSTOMER AGE ANALYSIS
+--  CUSTOMER AGE ANALYSIS
 ---------------------------------------------------------------
 
 -- Find youngest and oldest customers
@@ -63,7 +63,7 @@ SELECT
 FROM gold.dim_customers;
 
 ---------------------------------------------------------------
--- 📊 KEY BUSINESS METRICS
+--  KEY BUSINESS METRICS
 ---------------------------------------------------------------
 
 -- Generate a report showing all key business metrics
@@ -80,7 +80,7 @@ UNION ALL
 SELECT 'Total Nr. Customers', COUNT(customer_key) FROM gold.dim_customers;
 
 ---------------------------------------------------------------
--- 🌎 CUSTOMER DISTRIBUTION
+--  CUSTOMER DISTRIBUTION
 ---------------------------------------------------------------
 
 -- Total number of customers by country
@@ -100,7 +100,7 @@ GROUP BY gender
 ORDER BY total_customers DESC;
 
 ---------------------------------------------------------------
--- 🏷️ PRODUCT ANALYSIS
+--  PRODUCT ANALYSIS
 ---------------------------------------------------------------
 
 -- Total products by category
@@ -120,7 +120,7 @@ GROUP BY category
 ORDER BY avg_cost DESC;
 
 ---------------------------------------------------------------
--- 💰 REVENUE ANALYSIS
+--  REVENUE ANALYSIS
 ---------------------------------------------------------------
 
 -- Total revenue by category
@@ -156,7 +156,7 @@ GROUP BY c.country
 ORDER BY total_sold_items DESC;
 
 ---------------------------------------------------------------
--- 🏆 TOP & BOTTOM PERFORMANCE ANALYSIS
+--  TOP & BOTTOM PERFORMANCE ANALYSIS
 ---------------------------------------------------------------
 
 -- Top 5 best-performing products (highest revenue)
