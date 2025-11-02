@@ -1,12 +1,11 @@
-# sql-Exploratory-Data-Analysis-Project
-Exploratory Data Analysis (EDA) on SQL Data Warehouse
-# 📊 Exploratory Data Analysis (EDA) on SQL Data Warehouse
 
-This project performs **Exploratory Data Analysis (EDA)** on the **Gold Layer** of a SQL-based Data Warehouse that I built using the **Bronze → Silver → Gold** architecture.
+#  Exploratory Data Analysis (EDA) on SQL Data Warehouse
+
+This project performs **Exploratory Data Analysis (EDA)** on the **Gold Layer** of a SQL-based Data Warehouse that I built using the **Bronze → Silver → Gold** architecture.(check on my last project END-END DATA WAREHOUSE PROJECT(**Bronze → Silver → Gold**)
 
 ---
 
-## 🧩 Project Description
+##  Project Description
 
 This project demonstrates how analytical insights can be derived from a **well-structured data warehouse**.  
 The data warehouse was designed in three layers:
@@ -25,14 +24,23 @@ The purpose of this project is to showcase how SQL can be used for **data storyt
 
 ---
 
-## 🏗 Project Overview
+##  Project Overview
 
-The EDA aims to uncover key insights such as:
-- 📈 Total sales, quantity, and average price  
-- 👥 Customer distribution by country and gender  
-- 🏷 Product performance by category and subcategory  
-- 💰 Revenue analysis by customer and region  
-- 🥇 Top & bottom performing products  
+###The EDA aims to uncover key insights such as:
+**-Total sales, quantity, and average price
+-Customer distribution by country and gender
+-Product performance by category and subcategory
+-Revenue analysis by customer and region
+-Top and bottom performing products
+-Sales trends and growth patterns over time (yearly, monthly)
+-Cumulative and moving average performance tracking
+-Product performance compared to average and previous year
+-Category contribution to overall revenue (part-to-whole analysis)
+-Customer segmentation based on lifetime spending and activity (VIP, Regular, New)
+-Customer report and product report**
+
+
+Final business reporting layer combining all insights for decision-making 
 
 All analysis is performed on **Gold Layer** views:
 - `gold.fact_sales`
@@ -41,22 +49,29 @@ All analysis is performed on **Gold Layer** views:
 
 ---
 
-## 🧾 SQL Analysis Sections
+##  SQL Analysis Sections
 
-| Section | Description |
-|----------|--------------|
-| **Database Exploration** | View all tables, columns, and metadata |
-| **Dimension Exploration** | Explore customers, countries, and product hierarchy |
-| **Date Exploration** | Analyze order timeline (first, last, range) |
-| **Customer Insights** | Find youngest and oldest customers |
-| **Business Metrics** | Aggregate sales, quantity, and revenue KPIs |
-| **Distribution Analysis** | Customers by gender and country |
-| **Product & Revenue Analysis** | Identify high-value categories and customer revenue |
-| **Top/Bottom Analysis** | Rank top 5 and worst 5 products by sales |
+| **Section**                    | **Description**                                                               |
+| ------------------------------ | ----------------------------------------------------------------------------- |
+| **Database Exploration**       | View all tables, columns, and metadata in the Gold Layer                      |
+| **Dimension Exploration**      | Explore customer, country, and product hierarchies                            |
+| **Date Exploration**           | Analyze the range and timeline of order activity                              |
+| **Customer Insights**          | Identify youngest and oldest customers, and age distribution                  |
+| **Business Metrics**           | Compute total sales, quantity, orders, and customers                          |
+| **Distribution Analysis**      | Analyze customer distribution by gender and country                           |
+| **Product & Revenue Analysis** | Examine total revenue and product performance by category                     |
+| **Top/Bottom Analysis**        | Rank top 5 and bottom 5 products based on sales performance                   |
+| **Change Over Time Analysis**  | Analyze year-wise, month-wise, and monthly-over-year sales trends             |
+| **Cumulative Analysis**        | Compute cumulative sales and moving averages over time using window functions |
+| **Performance Analysis**       | Compare each product’s yearly performance with its average and previous years |
+| **Part-to-Whole Analysis**     | Identify category contribution percentages to overall sales                   |
+| **Customer Segmentation**      | Group customers as VIP, Regular, or New based on spending and lifespan        |
+| **Final Reporting View**       | Create business-ready SQL views combining all analytical insights             |
+
 
 ---
 
-## 📊 Example Output
+##  Example Output
 
 | measure_name         | measure_value |
 |----------------------|---------------|
@@ -69,7 +84,7 @@ All analysis is performed on **Gold Layer** views:
 
 ---
 
-## 🧠 Tools & Skills Used
+##  Tools & Skills Used
 
 - **SQL Server Management Studio (SSMS)**
 - **Data Warehousing (Bronze → Silver → Gold Architecture)**
@@ -79,19 +94,19 @@ All analysis is performed on **Gold Layer** views:
 
 ---
 
-## 🙌 Learning Credit
+##  Learning Credit
 
 This project was inspired by concepts and hands-on practice from **Data With Baraa’s SQL and Data Warehouse course**.  
 Thanks to the guidance from his tutorials, I could confidently build this end-to-end project independently.
 
 ---
 
-## 👩‍💻 About Me
+##  About Me
 
-Hi, I'm **Madhuri Uppunuthula** 👋  
+Hi, I'm **Madhuri Uppunuthula**   
 I'm a **data enthusiast** passionate about converting raw data into actionable insights using **SQL, Python, and visualization tools**.  
 I enjoy exploring **healthcare data**, **data analytics**, and **end-to-end data warehouse design**.  
 My goal is to build impactful projects that connect **technical skills with real-world business outcomes**.
 
 
-✨ *This project showcases not just SQL queries — but the full journey from raw data to insights.*
+ *This project showcases not just SQL queries — but the full journey from raw data to insights.*
